@@ -1,0 +1,9 @@
+Origin: 猫大人私有源
+Label: 猫大人私有源
+Suite: stable
+Version: 1.0
+Codename: 猫大人
+Architectures: iphoneos-arm
+Componets: main
+Description: 猫大人私有源.
+MD5Sum:
