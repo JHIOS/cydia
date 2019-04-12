@@ -1,3 +1,21 @@
+Package: com.dlvpn.ios
+Name: dlvpn
+Version: 1.0.0
+Description: 
+Section: System
+Depends: firmware (>= 5.0), mobilesubstrate
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: dlvpn
+Filename: debs//com.dlvpn.ios_1.0.0_iphoneos-arm.deb
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+
 Package: com.mdr.FakeFriendNum
 Name: FakeFriendNum
 Version: 1.1-1
@@ -8,7 +26,7 @@ Conflicts:
 Replaces: 
 Priority: optional
 Architecture: iphoneos-arm
-Author: weak
+Author: dlvpn
 Filename: debs//com.mdr.FakeFriendNum_1.1-1_iphoneos-arm.deb
 dev: 
 Homepage: 
