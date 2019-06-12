@@ -1,0 +1,100 @@
+Package: com.dlvpn.ios
+Version: 1.0.0
+Architecture: iphoneos-arm
+Depends: firmware (>= 5.0), mobilesubstrate
+Filename: debs/com.dlvpn.ios_2.0.0_iphoneos-arm.deb
+Size: 904656
+MD5sum: 02990eaa525065a1d180efc1702a09a6
+SHA1: 3e39ea89cfa2c17c9b11f2d1838cd8bd42e93427
+SHA256: d26d06f718e571286b2260f3f040f80f549da0c70fd89cfbab3aaf31e798789c
+Section: System
+Priority: optional
+Author: dlvpn
+Name: dlvpn
+
+Package: com.dlvpn.ios
+Version: 1.0.0
+Architecture: iphoneos-arm
+Depends: firmware (>= 5.0), mobilesubstrate
+Filename: debs/com.dlvpn.ios_1.0.0_iphoneos-arm.deb
+Size: 904656
+MD5sum: 02990eaa525065a1d180efc1702a09a6
+SHA1: 3e39ea89cfa2c17c9b11f2d1838cd8bd42e93427
+SHA256: d26d06f718e571286b2260f3f040f80f549da0c70fd89cfbab3aaf31e798789c
+Section: System
+Priority: optional
+Author: dlvpn
+Name: dlvpn
+
+Package: com.mdr.FakeContactNum
+Version: 0.1-1
+Architecture: iphoneos-arm
+Depends: firmware (>= 5.0), mobilesubstrate
+Filename: debs/com.mdr.FakeContactNum_0.1-1_iphoneos-arm.deb
+Size: 125010
+MD5sum: dcd3221d198bff8bd13c1745853a2962
+SHA1: 69013f17b5001c07b7caf8a706433f78abc74c59
+SHA256: 7ceed8008effba29840553908dcaadff201251b2faad30bd42814e43852476bd
+Section: System
+Priority: optional
+Description: 修改通讯录人数
+Author: weak
+Name: FakeContactNum
+
+Package: com.mdr.FakeFriendNum
+Version: 1.1-1
+Architecture: iphoneos-arm
+Depends: firmware (>= 5.0), mobilesubstrate
+Filename: debs/com.mdr.FakeFriendNum_1.1-1_iphoneos-arm.deb
+Size: 366512
+MD5sum: 37d839330228d85dd53e0c660f7092fb
+SHA1: 12815ef8be141b3b62c0bdb30eac80a44d53e090
+SHA256: 374dbf84903849c616332b751219aa29cadd617b652ca4db4f41807ffebd8b0c
+Section: System
+Priority: optional
+Author: weak
+Name: FakeFriendNum
+
+Package: com.dlvpn.ios
+Version: 1.0.0
+Architecture: iphoneos-arm
+Depends: firmware (>= 5.0), mobilesubstrate
+Filename: debs/com.dlvpn.ios_2.0.0_iphoneos-arm.deb
+Size: 904656
+MD5sum: 02990eaa525065a1d180efc1702a09a6
+SHA1: 3e39ea89cfa2c17c9b11f2d1838cd8bd42e93427
+SHA256: d26d06f718e571286b2260f3f040f80f549da0c70fd89cfbab3aaf31e798789c
+Section: System
+Priority: optional
+Author: dlvpn
+Name: dlvpn
+
+Package: com.mdr.FakeContactNum
+Version: 0.1-1
+Architecture: iphoneos-arm
+Depends: firmware (>= 5.0), mobilesubstrate
+Filename: debs/com.mdr.FakeContactNum_0.1-1_iphoneos-arm.deb
+Size: 125010
+MD5sum: dcd3221d198bff8bd13c1745853a2962
+SHA1: 69013f17b5001c07b7caf8a706433f78abc74c59
+SHA256: 7ceed8008effba29840553908dcaadff201251b2faad30bd42814e43852476bd
+Section: System
+Priority: optional
+Description: 修改通讯录人数
+Author: weak
+Name: FakeContactNum
+
+Package: com.mdr.FakeFriendNum
+Version: 1.1-1
+Architecture: iphoneos-arm
+Depends: firmware (>= 5.0), mobilesubstrate
+Filename: debs/com.mdr.FakeFriendNum_1.1-1_iphoneos-arm.deb
+Size: 366512
+MD5sum: 37d839330228d85dd53e0c660f7092fb
+SHA1: 12815ef8be141b3b62c0bdb30eac80a44d53e090
+SHA256: 374dbf84903849c616332b751219aa29cadd617b652ca4db4f41807ffebd8b0c
+Section: System
+Priority: optional
+Author: weak
+Name: FakeFriendNum
+
