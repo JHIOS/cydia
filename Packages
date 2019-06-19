@@ -56,14 +56,14 @@ Author: weak
 Name: FakeFriendNum
 
 Package: com.mdr.PassFriendReq
-Version: 0.1-1
+Version: 1.1
 Architecture: iphoneos-arm
 Depends: firmware (>= 5.0), mobilesubstrate
-Filename: debs/com.mdr.PassFriendReq_0.1-1_iphoneos-arm.deb
-Size: 51792
-MD5sum: 2c9ab443a026e195ced638493f4a218b
-SHA1: d683bfd75bad680c8df7237d2281e1ca0f750feb
-SHA256: 7076e6d8a1254fc0ce1e81d12b6323f6e5956ba534c1df8ca8cd2a461d924318
+Filename: debs/com.mdr.PassFriendReq_1.1_iphoneos-arm.deb
+Size: 53248
+MD5sum: 94d72ccc403959e264336e3575438fef
+SHA1: 395b72a9a38f8f2e16496309041197aabae9bc51
+SHA256: 4454a27a6081e4ec2de13fb54a3815b2dbcfbee3fd07f4e1fb9d95f047811c56
 Section: System
 Priority: optional
 Author: mdr
@@ -113,14 +113,14 @@ Author: weak
 Name: FakeFriendNum
 
 Package: com.mdr.PassFriendReq
-Version: 0.1-1
+Version: 1.1
 Architecture: iphoneos-arm
 Depends: firmware (>= 5.0), mobilesubstrate
-Filename: debs/com.mdr.PassFriendReq_0.1-1_iphoneos-arm.deb
-Size: 51792
-MD5sum: 2c9ab443a026e195ced638493f4a218b
-SHA1: d683bfd75bad680c8df7237d2281e1ca0f750feb
-SHA256: 7076e6d8a1254fc0ce1e81d12b6323f6e5956ba534c1df8ca8cd2a461d924318
+Filename: debs/com.mdr.PassFriendReq_1.1_iphoneos-arm.deb
+Size: 53248
+MD5sum: 94d72ccc403959e264336e3575438fef
+SHA1: 395b72a9a38f8f2e16496309041197aabae9bc51
+SHA256: 4454a27a6081e4ec2de13fb54a3815b2dbcfbee3fd07f4e1fb9d95f047811c56
 Section: System
 Priority: optional
 Author: mdr
