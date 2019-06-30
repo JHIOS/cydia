@@ -26,6 +26,20 @@ Priority: optional
 Author: dlvpn
 Name: dlvpn
 
+Package: com.mdr.ClearAllFriends
+Version: 1.0-0
+Architecture: iphoneos-arm
+Depends: firmware (>= 5.0), mobilesubstrate
+Filename: debs/com.mdr.ClearAllFriends_1.0-0_iphoneos-arm.deb
+Size: 13250
+MD5sum: dd93e2be7c4f0305a50c21ab272b9303
+SHA1: c812eb72244250061b56ee14e3c3e541456e3bfe
+SHA256: 55ddb688c4304b76523554e9497c901a362c0fe8b93f7ec054e8d0bcc3df3386
+Section: System
+Priority: optional
+Author: mdr
+Name: ClearAllFriends
+
 Package: com.mdr.FakeContactNum
 Version: 0.1-1
 Architecture: iphoneos-arm
@@ -50,6 +64,20 @@ Size: 366512
 MD5sum: 37d839330228d85dd53e0c660f7092fb
 SHA1: 12815ef8be141b3b62c0bdb30eac80a44d53e090
 SHA256: 374dbf84903849c616332b751219aa29cadd617b652ca4db4f41807ffebd8b0c
+Section: System
+Priority: optional
+Author: weak
+Name: FakeFriendNum
+
+Package: com.mdr.FakeFriendNum
+Version: 1.1-2
+Architecture: iphoneos-arm
+Depends: firmware (>= 5.0), mobilesubstrate
+Filename: debs/com.mdr.FakeFriendNum_1.1-2_iphoneos-arm.deb
+Size: 383328
+MD5sum: 1ebfdc5980665c7aa4a2cc95b12a92ab
+SHA1: d267301ba30f3afd3b9089b395d6c058695d5a2a
+SHA256: 9ff655253ea0df844089e6da8b9db7bd1e817234d2fc5d153d61e300ecf22ef0
 Section: System
 Priority: optional
 Author: weak
@@ -83,6 +111,20 @@ Priority: optional
 Author: dlvpn
 Name: dlvpn
 
+Package: com.mdr.ClearAllFriends
+Version: 1.0-0
+Architecture: iphoneos-arm
+Depends: firmware (>= 5.0), mobilesubstrate
+Filename: debs/com.mdr.ClearAllFriends_1.0-0_iphoneos-arm.deb
+Size: 13250
+MD5sum: dd93e2be7c4f0305a50c21ab272b9303
+SHA1: c812eb72244250061b56ee14e3c3e541456e3bfe
+SHA256: 55ddb688c4304b76523554e9497c901a362c0fe8b93f7ec054e8d0bcc3df3386
+Section: System
+Priority: optional
+Author: mdr
+Name: ClearAllFriends
+
 Package: com.mdr.FakeContactNum
 Version: 0.1-1
 Architecture: iphoneos-arm
@@ -99,14 +141,14 @@ Author: weak
 Name: FakeContactNum
 
 Package: com.mdr.FakeFriendNum
-Version: 1.1-1
+Version: 1.1-2
 Architecture: iphoneos-arm
 Depends: firmware (>= 5.0), mobilesubstrate
-Filename: debs/com.mdr.FakeFriendNum_1.1-1_iphoneos-arm.deb
-Size: 366512
-MD5sum: 37d839330228d85dd53e0c660f7092fb
-SHA1: 12815ef8be141b3b62c0bdb30eac80a44d53e090
-SHA256: 374dbf84903849c616332b751219aa29cadd617b652ca4db4f41807ffebd8b0c
+Filename: debs/com.mdr.FakeFriendNum_1.1-2_iphoneos-arm.deb
+Size: 383328
+MD5sum: 1ebfdc5980665c7aa4a2cc95b12a92ab
+SHA1: d267301ba30f3afd3b9089b395d6c058695d5a2a
+SHA256: 9ff655253ea0df844089e6da8b9db7bd1e817234d2fc5d153d61e300ecf22ef0
 Section: System
 Priority: optional
 Author: weak
