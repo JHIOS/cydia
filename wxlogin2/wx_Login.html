@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>微信快速登录</title>
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+		<link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+		<style type="text/css">
+		input[type="text"] {
+			text-align:right;
+			font-size:.7rem
+		}
+		.white {
+			color:white
+		}
+		.list-block .item-title.label {
+			width:28%
+		}
+		.theme-dark .list-block .item-title.label {
+			width:33%
+		}
+		.list-block input[type=text].pull-left {
+			width:30%;
+			height:1.6rem;
+			line-height:1.6rem;
+			text-align:center
+		}
+		label.pull-left {
+			line-height:1.6rem
+		}
+		img {
+			width:1.5rem;
+			height:1.5rem;
+			border-radius:.8rem;
+			margin-top:0rem
+		}
+		.item-input.row {
+			text-align:right
+		}
+		.col-50 {
+			height:1.6rem;
+			line-height:1.6rem;
+			overflow:hidden;
+			text-overflow:ellipsis;
+			white-space:nowrap
+		}
+		.item-input a{
+			font-size:.6rem
+
+		}
+		.tl {
+			text-align:left
+		}
+		.picker {
+			width:40%;
+			text-align:right
+		}
+		.picker input {
+			width:45%;
+			height:1rem;
+			line-height:1rem;
+			background:none;
+			color:#0894ec;
+			border:none
+		}
+		.content-block-title .pull-left {
+			}.theme-dark .list-block {
+			margin-bottom:.99rem
+		}
+		.theme-dark .content-block-title {
+			margin-top:.75rem
+		}
+		.list-block,input::-webkit-input-placeholder {
+			font-size:.7rem
+		}
+		.list-block ul {
+			background:none
+		}
+		.content-block-title,li {
+			color:#fff
+		}
+		.icon0 {
+			height:1.5rem;
+			line-height:1.5rem;
+			width:100%;
+			background-size:90%
+					100%
+		}
+
+			.sl-li {
+			  height: 100%;
+			  position: relative;
+			  background-color: #fff;
+			  transform: translateZ(0);
+			  -webkit-transform: translateZ(0);
+			}
+			.sl-li .sl-content {
+			  height: 100%;
+			  overflow: hidden;
+			  padding: 10px;
+			  position: relative;
+			  z-index: 10;
+			  background-color: #222526;
+			}
+			.sl-li .sl-content.animated {
+			  -webkit-transition: -webkit-transform .2s ease-out;
+			  transition: transform .2s ease-out;
+			}
+			.sl-li .sl-opts {
+			  height: 100%;
+			  display: -webkit-box;
+			  -webkit-box-pack: center;
+			  -webkit-box-align: center;
+			  position: absolute;
+			  top: 0;
+			  right: 0;
+			  z-index: 0;
+			}
+			.sl-li .sl-opts span {
+			  height: 100%;
+			  padding: 0 10px;
+			  display: -webkit-box;
+			  -webkit-box-pack: center;
+			  -webkit-box-align: center;
+			}
+　　　　
+		</style>
+	</head>
+	<body  onload="readConf();"> <!-- loadScript readConf -->
+		<div class="page-group theme-dark">
+			<div class="page page-current">
+				<header class="bar bar-nav " style="background:rgba(25,25,28,.5);height:3.2rem;padding-top:1rem">
+					<button class="button button-link button-nav pull-left" onclick="goBack()">
+						<span class="icon icon-left">
+						</span>
+						返回
+					</button>
+					<button class="button button-link button-nav pull-right" onclick="creatAccount()">
+						新增
+						<span class="icon icon-settings">
+						</span>
+					</button>
+					<h1 class="title white">
+						微信快速登录
+					</h1>
+				</header>
+				<div class="content theme-dark">
+					<form>
+						<div class="list-block" style="clear:both">
+							<div class="content-block-title" style="font-size:20px">账号列表</div>
+							<ul id='ulid'>
+
+								<li id="loadConf" class="sl-li ui-border-b"><div class="item-content sl-content"><div class="item-inner">
+									<span  class="item-title label">点击加载</span>
+								</div></li>
+
+							</ul>
+						</div>
+						
+						
+
+							<br>
+							<br>
+							
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="./sass/slideleft.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./sass/zepto.min.js" charset="utf-8"></script>
+		<script>
+			function loadScript(){
+			    var myScript=document.createElement("script");
+			    myScript.src="./sass/slideleft.js";
+			    document.body.appendChild(myScript);
+			    var myScript=document.createElement("script");
+			    myScript.src="./sass/zepto.min.js";
+			    document.body.appendChild(myScript);  
+
+
+
+			    var deleteoli = document.getElementsByName("delete");
+
+			    for (var i = 0; i <deleteoli.length; i++) {
+			    	
+			    	deleteoli[i].onclick =  function() {
+     
+			     		 var userName = $(this).parents("li").find("#listid").text();
+			     		 deleteAccount(userName);
+			      
+					}
+			    }
+			    var loginoli = document.getElementsByName("login");
+
+			    for (var i = 0; i <loginoli.length; i++) {
+			    	
+			    	loginoli[i].onclick =  function() {
+     
+			     		 var userName = $(this).parents("li").find("#listid").text();
+			     		 loginAccount(userName);
+			      
+					}
+			    }
+
+
+
+                
+			};
+
+			
+			// $('#loadConf').on('click', readConf());
+			window.onload=readConf();
+			
+		</script>
+	</body>
+
+
+
+</html>
