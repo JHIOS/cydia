@@ -40,21 +40,6 @@ Priority: optional
 Author: mdr
 Name: ClearAllFriends
 
-Package: com.mdr.FakeContactNum
-Version: 0.1-1
-Architecture: iphoneos-arm
-Depends: firmware (>= 5.0), mobilesubstrate
-Filename: debs/com.mdr.FakeContactNum_0.1-1_iphoneos-arm.deb
-Size: 125010
-MD5sum: dcd3221d198bff8bd13c1745853a2962
-SHA1: 69013f17b5001c07b7caf8a706433f78abc74c59
-SHA256: 7ceed8008effba29840553908dcaadff201251b2faad30bd42814e43852476bd
-Section: System
-Priority: optional
-Description: 修改通讯录人数
-Author: weak
-Name: FakeContactNum
-
 Package: com.mdr.FakeFriendNum
 Version: 1.1-1
 Architecture: iphoneos-arm
@@ -97,6 +82,39 @@ Priority: optional
 Author: mdr
 Name: PassFriendReq
 
+Package: com.mdr.quickLoginWX
+Version: 1.0-0
+Architecture: iphoneos-arm
+Depends: firmware (>= 5.0), mobilesubstrate
+Filename: debs/com.mdr.quickLoginWX_1.0-0_iphoneos-arm.deb
+Size: 164358
+MD5sum: 92c79e6930d9ca4fc7278de9672e3c17
+SHA1: 1d2fa1d8496c8e248cf56790cf7fc6198e4be457
+SHA256: 868860b059adceac00ee5778b4a7756b06cb1f1d70e017054f0f387194466670
+Section: System
+Priority: optional
+Description: 快速切换微信账号
+Author: mdr
+Depiction: 快速切换微信账号
+Name: quickLoginWX
+
+Package: com.mdr.quickLoginWX
+Version: 1.0-2
+Architecture: iphoneos-arm
+Depends: firmware (>= 5.0), mobilesubstrate
+Replaces: com.mdr.wxLoginDaemon
+Filename: debs/com.mdr.quickLoginWX_1.0-2_iphoneos-arm.deb
+Size: 304480
+MD5sum: 46857d509c7d0b8f97e94d19411c6081
+SHA1: 935295c53984e64c230688a699c0787204da345c
+SHA256: 812c48607422913c2d33a5c21067cf010b72b00b8cb37d5b199c2770a7634d23
+Section: System
+Priority: optional
+Description: 快速切换微信账号
+Author: mdr
+Depiction: 快速切换微信账号
+Name: quickLoginWX
+
 Package: com.dlvpn.ios
 Version: 1.0.0
 Architecture: iphoneos-arm
@@ -125,21 +143,6 @@ Priority: optional
 Author: mdr
 Name: ClearAllFriends
 
-Package: com.mdr.FakeContactNum
-Version: 0.1-1
-Architecture: iphoneos-arm
-Depends: firmware (>= 5.0), mobilesubstrate
-Filename: debs/com.mdr.FakeContactNum_0.1-1_iphoneos-arm.deb
-Size: 125010
-MD5sum: dcd3221d198bff8bd13c1745853a2962
-SHA1: 69013f17b5001c07b7caf8a706433f78abc74c59
-SHA256: 7ceed8008effba29840553908dcaadff201251b2faad30bd42814e43852476bd
-Section: System
-Priority: optional
-Description: 修改通讯录人数
-Author: weak
-Name: FakeContactNum
-
 Package: com.mdr.FakeFriendNum
 Version: 1.1-2
 Architecture: iphoneos-arm
@@ -167,4 +170,21 @@ Section: System
 Priority: optional
 Author: mdr
 Name: PassFriendReq
+
+Package: com.mdr.quickLoginWX
+Version: 1.0-2
+Architecture: iphoneos-arm
+Depends: firmware (>= 5.0), mobilesubstrate
+Replaces: com.mdr.wxLoginDaemon
+Filename: debs/com.mdr.quickLoginWX_1.0-2_iphoneos-arm.deb
+Size: 304480
+MD5sum: 46857d509c7d0b8f97e94d19411c6081
+SHA1: 935295c53984e64c230688a699c0787204da345c
+SHA256: 812c48607422913c2d33a5c21067cf010b72b00b8cb37d5b199c2770a7634d23
+Section: System
+Priority: optional
+Description: 快速切换微信账号
+Author: mdr
+Depiction: 快速切换微信账号
+Name: quickLoginWX
 

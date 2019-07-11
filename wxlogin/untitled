@@ -1,0 +1,163 @@
+ 
+    if([obj isKindOfClass:[%c(NSDictionary) class]]){
+        NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+        [dic setDictionary:obj];
+
+        if([dic[@"jailbroken"] intValue] == 1){
+            [dic setObject:@0 forKey:@"jailbroken"];
+        }
+        if([dic[@"is_jailbroken"] intValue] == 1){
+            [dic setObject:@0 forKey:@"is_jailbroken"];
+        }
+        if([dic[@"jailbreak"] intValue] == 1){
+            [dic setObject:@0 forKey:@"jailbreak"];
+        }
+        
+        
+        
+        NSMutableDictionary *headerDic = [NSMutableDictionary dictionary];
+        [headerDic setDictionary:dic[@"header"]];
+
+        if([dic[@"header"][@"is_jailbroken"] intValue] == 1){
+            [headerDic setObject:@0 forKey:@"is_jailbroken"];
+            [dic setObject:headerDic forKey:@"header"];
+            
+        }
+        if([dic[@"header"][@"is_jailbroken"] isKindOfClass:[NSString class]]){
+            
+            if([dic[@"header"][@"is_jailbroken"] isEqualToString:@"YES"]){
+                
+                [headerDic setObject:@"NO" forKey:@"is_jailbroken"];
+                [dic setObject:headerDic forKey:@"header"];
+            }
+        }
+        
+        NSMutableDictionary *bodyDic = [NSMutableDictionary dictionary];
+        if([dic[@"body"] isKindOfClass:[NSDictionary class]]){
+            [bodyDic setDictionary:dic[@"body"]];
+            
+            if([dic[@"body"][@"header"] isKindOfClass:[NSDictionary class]]){
+                NSMutableDictionary *headerDic = [NSMutableDictionary dictionary];
+                [headerDic setDictionary:dic[@"body"][@"header"]];
+                
+
+            
+            }
+
+        else if([dic[@"header"][@"is_jailbroken"] isKindOfClass:[NSString class]]){
+            if([dic[@"header"][@"is_jailbroken"] isEqualToString:@"YES"]){
+                [headerDic setObject:@"NO" forKey:@"is_jailbroken"];
+                [dic setObject:headerDic forKey:@"header"];
+            }
+            
+        }
+        
+        NSMutableDictionary *dataDic = [NSMutableDictionary dictionary];
+        if([dic[@"data"] isKindOfClass:[NSDictionary class]]){
+            [dataDic setDictionary:dic[@"data"]];
+            
+            if([dic[@"data"][@"is_jailbroken"] intValue] == 1){
+                [dataDic setObject:@0 forKey:@"is_jailbroken"];
+                [dic setObject:dataDic forKey:@"data"];
+                
+            }
+        }
+        
+        
+        if(dic[@"sec"]){
+            
+            NSString *secString = dic[@"sec"];
+            
+            NSData *jsonData = [secString dataUsingEncoding:NSUTF8StringEncoding];
+            NSError *err;
+            NSDictionary *secDic = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                                options:NSJSONReadingMutableContainers
+                                                                  error:&err];
+            
+            NSMutableDictionary *secMudic = [[NSMutableDictionary alloc] initWithDictionary:secDic];
+            
+            NSDictionary *dbg = @{@"ctl":@0,
+                                  @"sys_ctl":@0,
+                                  @"tty":@0,
+                                  @"oppid":@0,
+                                  @"wp":@0,
+                                  @"ntf":@0};
+            [secMudic setObject:dbg forKey:@"dbg"];
+            
+            
+            NSArray *modsList = secMudic[@"jb"][@"mods"];
+            NSMutableArray *mods = [NSMutableArray array];
+            for(NSString *modStr in modsList){
+                if([modStr containsString:@"Aweme.app"]){
+                    [mods addObject:modStr];
+                }
+            }
+            
+            NSDictionary *jb = @{@"dylb":@0,
+                                 @"file":@0,
+                                 @"file_sys":@0,
+                                 @"env":@"",
+                                 @"mods":mods};
+            
+            [secMudic setObject:jb forKey:@"jb"];
+            
+            
+            NSDictionary *hook =@{@"ker":@[],
+                                  @"fr":@{},
+                                  @"fish":@[]};
+            [secMudic setObject:hook forKey:@"hook"];
+            
+            NSDictionary *extensionDic = secMudic[@"extension"];
+            NSMutableDictionary *extension = [[NSMutableDictionary alloc] initWithDictionary:extensionDic];
+            [extension setObject:@"|" forKey:@"ldp"];
+            
+            NSString *glb = extension[@"glb"];
+            glb = [glb stringByReplacingOccurrencesOfString:@"DYLD_INSERT_LIBRARIES=/Library/MobileSubstrate/MobileSubstrate.dylib" withString:@"DYLD_INSERT_LIBRARIES="];
+            [extension setObject:glb forKey:@"glb"];
+            
+            [secMudic setObject:extension forKey:@"extension"];
+
+            NSError *parseError = nil;
+            
+            NSData *jsonData = [NSJSONSerialization dataWithJSONObject:secMudic options:NSJSONWritingPrettyPrinted error:&parseError];
+            
+            secString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+            
+
+            
+            
+            
+//            sec = [sec stringByReplacingOccurrencesOfString:@"\"dylb\":1" withString:@"\"dylb\":0"];
+//            sec = [sec stringByReplacingOccurrencesOfString:@"\"file\":1" withString:@"\"file\":0"];
+//            sec = [sec stringByReplacingOccurrencesOfString:@"\"file_sys\":1" withString:@"\"file_sys\":0"];
+//            sec = [sec stringByReplacingOccurrencesOfString:@"\"env\":\"/Library/MobileSubstrate/MobileSubstrate.dylib\"" withString:@"\"env\":\"\""];
+//            sec = [sec stringByReplacingOccurrencesOfString:@"\"/Library/MobileSubstrate/MobileSubstrate.dylib\"," withString:@""];
+//            sec = [sec stringByReplacingOccurrencesOfString:@"\"/Library/MobileSubstrate/DynamicLibraries/PRTweak.dylib\"," withString:@""];
+//            sec = [sec stringByReplacingOccurrencesOfString:@"\"/Library/Frameworks/CydiaSubstrate.framework/CydiaSubstrate\"," withString:@""];
+//            sec = [sec stringByReplacingOccurrencesOfString:@"\"/Library/MobileSubstrate/DynamicLibraries/TSChangeSpeed.dylib\"," withString:@""];
+//            sec = [sec stringByReplacingOccurrencesOfString:@"\"/Library/MobileSubstrate/DynamicLibraries/dyTweak.dylib\"" withString:@""];
+//            sec = [sec stringByReplacingOccurrencesOfString:@"\"/Library/Frameworks/CydiaSubstrate.framework/Libraries/SubstrateLoader.dylib\"," withString:@""];
+//            sec = [sec stringByReplacingOccurrencesOfString:@"com.openssh.sshd.plist|com.prt.daemon.plist|com.saurik.Cydia.Startup.plist|com.teiron.PPHelperLaunchd.plist|io.pangu93.loader.plist" withString:@""];
+
+            
+            write_log(secString);
+
+            [dic setObject:secString forKey:@"sec"];
+
+            
+            
+        }
+        
+        
+        
+        
+        
+        NSLog(@"----%@",dic);
+
+        return %orig(dic,opt,error);
+    
+    }else{
+        NSLog(@"----%@",obj);
+
+    }
+    
