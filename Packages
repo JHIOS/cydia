@@ -115,6 +115,23 @@ Author: mdr
 Depiction: 快速切换微信账号
 Name: quickLoginWX
 
+Package: com.mdr.quickLoginWX
+Version: 1.0-3
+Architecture: iphoneos-arm
+Depends: firmware (>= 5.0), mobilesubstrate
+Replaces: com.mdr.wxLoginDaemon
+Filename: debs/com.mdr.quickLoginWX_1.0-3_iphoneos-arm.deb
+Size: 304654
+MD5sum: 2dfb34eb68e82da73b9603a15c286cf0
+SHA1: b188a3794eb452e83deb2d0d0d2b005cff347a48
+SHA256: 29d866fe7176a86a7429ca7a549d92bdf8d147a4edbf58fc693df6078db01a60
+Section: System
+Priority: optional
+Description: 快速切换微信账号
+Author: mdr
+Depiction: 快速切换微信账号
+Name: quickLoginWX
+
 Package: com.dlvpn.ios
 Version: 1.0.0
 Architecture: iphoneos-arm
@@ -172,15 +189,15 @@ Author: mdr
 Name: PassFriendReq
 
 Package: com.mdr.quickLoginWX
-Version: 1.0-2
+Version: 1.0-3
 Architecture: iphoneos-arm
 Depends: firmware (>= 5.0), mobilesubstrate
 Replaces: com.mdr.wxLoginDaemon
-Filename: debs/com.mdr.quickLoginWX_1.0-2_iphoneos-arm.deb
-Size: 304480
-MD5sum: 46857d509c7d0b8f97e94d19411c6081
-SHA1: 935295c53984e64c230688a699c0787204da345c
-SHA256: 812c48607422913c2d33a5c21067cf010b72b00b8cb37d5b199c2770a7634d23
+Filename: debs/com.mdr.quickLoginWX_1.0-3_iphoneos-arm.deb
+Size: 304654
+MD5sum: 2dfb34eb68e82da73b9603a15c286cf0
+SHA1: b188a3794eb452e83deb2d0d0d2b005cff347a48
+SHA256: 29d866fe7176a86a7429ca7a549d92bdf8d147a4edbf58fc693df6078db01a60
 Section: System
 Priority: optional
 Description: 快速切换微信账号
