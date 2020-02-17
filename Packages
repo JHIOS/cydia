@@ -41,28 +41,14 @@ Author: mdr
 Name: ClearAllFriends
 
 Package: com.mdr.FakeFriendNum
-Version: 1.1-1
+Version: 1.1-14
 Architecture: iphoneos-arm
 Depends: firmware (>= 5.0), mobilesubstrate
-Filename: debs/com.mdr.FakeFriendNum_1.1-1_iphoneos-arm.deb
-Size: 366512
-MD5sum: 37d839330228d85dd53e0c660f7092fb
-SHA1: 12815ef8be141b3b62c0bdb30eac80a44d53e090
-SHA256: 374dbf84903849c616332b751219aa29cadd617b652ca4db4f41807ffebd8b0c
-Section: System
-Priority: optional
-Author: weak
-Name: FakeFriendNum
-
-Package: com.mdr.FakeFriendNum
-Version: 1.1-2
-Architecture: iphoneos-arm
-Depends: firmware (>= 5.0), mobilesubstrate
-Filename: debs/com.mdr.FakeFriendNum_1.1-2_iphoneos-arm.deb
-Size: 383328
-MD5sum: 1ebfdc5980665c7aa4a2cc95b12a92ab
-SHA1: d267301ba30f3afd3b9089b395d6c058695d5a2a
-SHA256: 9ff655253ea0df844089e6da8b9db7bd1e817234d2fc5d153d61e300ecf22ef0
+Filename: debs/com.mdr.FakeFriendNum_1.1-14_iphoneos-arm.deb
+Size: 672278
+MD5sum: 54dfd5087cd850182c6054b6039c46a9
+SHA1: 09bfa4e9281db7906d8683696f3238273b426469
+SHA256: bb994a7baf763983f29bd957506a01b9ecfce14527fe50d5626ad522c37104c6
 Section: System
 Priority: optional
 Author: weak
@@ -161,14 +147,14 @@ Author: mdr
 Name: ClearAllFriends
 
 Package: com.mdr.FakeFriendNum
-Version: 1.1-2
+Version: 1.1-14
 Architecture: iphoneos-arm
 Depends: firmware (>= 5.0), mobilesubstrate
-Filename: debs/com.mdr.FakeFriendNum_1.1-2_iphoneos-arm.deb
-Size: 383328
-MD5sum: 1ebfdc5980665c7aa4a2cc95b12a92ab
-SHA1: d267301ba30f3afd3b9089b395d6c058695d5a2a
-SHA256: 9ff655253ea0df844089e6da8b9db7bd1e817234d2fc5d153d61e300ecf22ef0
+Filename: debs/com.mdr.FakeFriendNum_1.1-14_iphoneos-arm.deb
+Size: 672278
+MD5sum: 54dfd5087cd850182c6054b6039c46a9
+SHA1: 09bfa4e9281db7906d8683696f3238273b426469
+SHA256: bb994a7baf763983f29bd957506a01b9ecfce14527fe50d5626ad522c37104c6
 Section: System
 Priority: optional
 Author: weak
